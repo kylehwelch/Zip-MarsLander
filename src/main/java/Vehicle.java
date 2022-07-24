@@ -36,7 +36,7 @@ public class Vehicle {
                 s = dead;
                 Flying = DEAD;
             }
-            if (this.Velocity < 10 && this.Velocity > 3) {
+            if (this.Velocity < 10 && this.Velocity >= 3) {
                 s = crashed;
                 Flying = CRASHED;
             }
@@ -79,5 +79,4 @@ public class Vehicle {
         // filled in with the state of the vehicle.
         return null;
     }
-
 }
