@@ -2,9 +2,7 @@ public class OnBoardComputer implements BurnStream {
 
     @Override
     public int getNextBurn(DescentEvent status) {
-        int burn = 0;
-        
-        System.out.println(burn); /*hack!*/
+        int burn = ((status.Velocity * status.Velocity)) / (2 * status.Altitude) + 99;
         return burn;
     }
 
